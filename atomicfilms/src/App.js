@@ -1,14 +1,14 @@
-import './App.css';
-import FooterPage from './components/Footer';
-import { MovieList } from './components/MovieList';
+import "./App.css";
+import FooterPage from "./components/Footer";
+import { MovieList } from "./components/MovieList";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="App">
-      
-      <MovieList/>
+      <Header />
+      <MovieList />
       <FooterPage />
-        
     </div>
   );
 }
