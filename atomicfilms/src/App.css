@@ -20,7 +20,7 @@ html {
  height: auto;
  min-height: 20rem;
  max-height: 35.625rem;
-
+background-color: #F1F1F1 !important;
 }
 
 .score {
