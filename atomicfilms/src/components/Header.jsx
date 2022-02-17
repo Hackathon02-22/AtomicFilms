@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 
 const Header = () => {
   return (
-    <div class="mb-5">
+    <div className="mb-5">
       <Navbar />
     </div>
   );

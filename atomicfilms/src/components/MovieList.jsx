@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getAllMovies } from "../service/movieService";
+import { getAllMovies, getData } from "../service/movieService";
 import { MovieCard } from "./MovieCard";
 
 export function MovieList() {
@@ -7,11 +7,14 @@ export function MovieList() {
 
   useEffect(() => {
     getAllMovies().then((resp) => setMovies(resp.results));
-  });
+    getData().then((res) => {
+      console.log(res);
+    });
+  }, []);
   return (
-    <div class="mt-5 vh-100">
-      {movies.map((movie) => (
-        <MovieCard movie={movie} key={movie.index} />
+    <div className="vh-100 py-5">
+      {movies.map((movie, index) => (
+        <MovieCard movie={movie} key={index} />
       ))}
     </div>
   );
