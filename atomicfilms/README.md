@@ -1,6 +1,6 @@
 # AtomicFilms
 
-    A React Native web page and APP designed and created for Adevinta, in the 2022 Factría F5 Hackton.
+    A React Native web page and APP designed and created for Adevinta, in the 2022 Factoría F5 Hackton.
 
 ## Built With
 
