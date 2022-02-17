@@ -7,11 +7,11 @@ export function MovieList() {
 
   useEffect(() => {
     getAllMovies().then((resp) => setMovies(resp.results));
-  });
+  }, []);
   return (
     <div class="mt-5 vh-100">
-      {movies.map((movie) => (
-        <MovieCard movie={movie} key={movie.index} />
+      {movies.map((movie, index) => (
+        <MovieCard movie={movie} key={index} cardnumber={index} />
       ))}
     </div>
   );

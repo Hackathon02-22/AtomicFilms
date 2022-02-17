@@ -3,12 +3,12 @@ export function MovieCard(props) {
     <div className="movie-body row align-items-center">
       <div class="row align-items-center">
         <div className="card mt-5 mb-5 pt-5 pb-5 w-50">
-          <div className="poster-card" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <div className="poster-card" type="button" data-bs-toggle="modal" data-bs-target={`#exampleModal${props.cardnumber}`}>
             <img
               src={`https://image.tmdb.org/t/p/w500/${props.movie.poster_path}`}
               alt="Movie Poster"
             />
-            <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div className="modal fade" id={`exampleModal${props.cardnumber}`} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div className="modal-dialog">
                 <div className="modal-content">
                   <div className="modal-header d-flex justify-content-center">
