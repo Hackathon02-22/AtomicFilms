@@ -3,15 +3,35 @@ export function MovieCard(props) {
     <div className="movie-body row align-items-center">
       <div class="row align-items-center">
         <div className="card mt-5 mb-5 pt-5 pb-5 w-50">
-          <div className="poster-card">
+          <div className="poster-card" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <img
               src={`https://image.tmdb.org/t/p/w500/${props.movie.poster_path}`}
               alt="Movie Poster"
             />
+            <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div className="modal-dialog">
+                <div className="modal-content">
+                  <div className="modal-header d-flex justify-content-center">
+                    <h5 className="modal-title " id="exampleModalLabel">{props.movie.title}</h5>
+                  </div>
+                  <div className="modal-body">
+                    <div className="d-flex justify-content-center pb-3">
+                      <img src={`https://image.tmdb.org/t/p/w300/${props.movie.poster_path}`} class="" alt="" />
+                    </div>
+                    <div>{props.movie.overview}</div>
+                    <div></div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-warning">Add to favorites</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="movie-name">Movie: {props.movie.title}</div>
         </div>
       </div>
-      </div>
-      );
+    </div>
+  );
 }
