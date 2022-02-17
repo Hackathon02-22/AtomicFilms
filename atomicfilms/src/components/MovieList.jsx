@@ -7,7 +7,7 @@ export function MovieList() {
 
   useEffect(() => {
     getAllMovies().then((resp) => setMovies(resp.results));
-  });
+  },[]);
   return (
     <div class="card-container">
       {movies.map((movie) => (

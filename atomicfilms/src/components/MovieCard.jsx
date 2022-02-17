@@ -8,7 +8,7 @@ export function MovieCard(props) {
               src={`https://image.tmdb.org/t/p/w500/${props.movie.poster_path}`}
               alt="Movie Poster"
             />
-            <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div className="modal fade" id={`exampleModal${props.cardnumber}`} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div className="modal-dialog">
                 <div className="modal-content">
                   <div className="modal-header d-flex justify-content-center">
