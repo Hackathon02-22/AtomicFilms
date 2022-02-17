@@ -1,6 +1,4 @@
-
-
-export function getAllMovies() {
-    return fetch('https://api.themoviedb.org/3/movie/popular?api_key=f0804310b2aa799c42575717c6a0eae1&language=es-MX', {method:"GET"})
-          .then(res => res.json())
-  }
+export async function getAllMovies() {
+    const res = await fetch('https://api.themoviedb.org/3/movie/popular?api_key=f0804310b2aa799c42575717c6a0eae1&language=es-MX', { method: "GET" });
+    return await res.json();
+}
