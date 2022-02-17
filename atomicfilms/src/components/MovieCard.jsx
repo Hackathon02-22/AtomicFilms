@@ -1,25 +1,20 @@
 export function MovieCard(props) {
   return (
     <div className="d-flex flex-wrap align-items-center justify-content-center">
-      <div class="d-flex flex-row align-items-center justify-content-center m-0 p-0">
+      <div className="d-flex flex-row align-items-center justify-content-center m-0 p-0">
         <div className="card w-auto">
-          <div
-            className="d-flex flex-wrap align-items-center justify-content-center m-3"
-            type="button"
-            data-bs-toggle="modal"
-            data-bs-target={`#exampleModal${props.cardnumber}`}
-          >
-            <img
-              src={`https://image.tmdb.org/t/p/w300/${props.movie.poster_path}`}
-              alt="Movie Poster"
-            />
             <div
-              className="modal fade"
-              id={`exampleModal${props.cardnumber}`}
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
+              className="d-flex flex-wrap align-items-center justify-content-center m-3"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target={`#exampleModal${props.cardnumber}`}>
+              <img src={`https://image.tmdb.org/t/p/w300/${props.movie.poster_path}`}
+                alt="Movie Poster"/>
+              <div className="modal fade"
+                id={`exampleModal${props.cardnumber}`}
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
               <div className="modal-dialog">
                 <div className="modal-content">
                   <div className="modal-header d-flex justify-content-center">
@@ -31,32 +26,23 @@ export function MovieCard(props) {
                     <div className="d-flex justify-content-center pb-3">
                       <img
                         src={`https://image.tmdb.org/t/p/w300/${props.movie.poster_path}`}
-                        class=""
+                        className=""
                         alt=""
                       />
                     </div>
                     <div>{props.movie.overview}</div>
-                    <div></div>
                   </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-warning">
-                      Add to favorites
-                    </button>
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      Close
-                    </button>
+                  <div className="modal-footer">
+                    <button type="button" className="btn btn-warning">Add to favorites</button>
+                    <button type="button" className="btn btn-secondary" data-bs-dismiss="modal"> Close </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="divTitleMovie p-3 d-flex align-items-center justify-content-evenly gap-3">
-            <p class="m-0 text-center fw-bold">{props.movie.title}</p>
-            <p class="m-0 score text-center p-1 fw-bold rounded-3">
+          <div className="divTitleMovie p-3 d-flex align-items-center justify-content-evenly gap-3">
+            <p className="m-0 text-center fw-bold">{props.movie.title}</p>
+            <p className="m-0 score text-center p-1 fw-bold rounded-3">
               {props.movie.vote_average}
             </p>
           </div>
