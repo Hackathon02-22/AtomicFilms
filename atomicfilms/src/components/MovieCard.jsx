@@ -1,5 +1,3 @@
-
-
 export function MovieCard(props) {
     return (
       <div>
@@ -10,7 +8,6 @@ export function MovieCard(props) {
               alt="Moivie Poster"
             />
           </div>
-
           <div className="movie-name">Movie: {props.movie.title}</div>
         </div>
       </div>
