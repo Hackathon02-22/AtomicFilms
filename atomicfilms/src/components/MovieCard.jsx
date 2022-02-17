@@ -1,8 +1,8 @@
 export function MovieCard(props) {
   return (
     <div className="movie-body row align-items-center">
-      <div class="row align-items-center">
-        <div className="card mt-5 mb-5 pt-5 pb-5 w-50">
+      <div class="row align-items-center justify-content-center">
+        <div className="card mt-5 pt-3 w-auto">
           <div className="poster-card" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <img
               src={`https://image.tmdb.org/t/p/w500/${props.movie.poster_path}`}

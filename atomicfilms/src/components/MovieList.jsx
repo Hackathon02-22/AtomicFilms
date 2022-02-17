@@ -9,7 +9,7 @@ export function MovieList() {
     getAllMovies().then((resp) => setMovies(resp.results));
   });
   return (
-    <div class="mt-5 vh-100">
+    <div class="card-container">
       {movies.map((movie) => (
         <MovieCard movie={movie} key={movie.index} />
       ))}

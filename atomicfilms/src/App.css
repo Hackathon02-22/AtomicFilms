@@ -9,3 +9,7 @@
 .navbar-nav .dropdown-menu{
   position: absolute !important;
 }
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(1000px ,1fr));
+}
