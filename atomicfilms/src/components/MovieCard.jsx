@@ -7,7 +7,7 @@ export function MovieCard(props) {
           <div className="poster-card">
             <img
               src={`https://image.tmdb.org/t/p/w500/${props.movie.poster_path}`}
-              alt="Moivie Poster"
+              alt="Movie Poster"
             />
           </div>
 
