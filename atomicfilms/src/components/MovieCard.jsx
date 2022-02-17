@@ -2,7 +2,7 @@ export function MovieCard(props) {
   return (
     <div className="movie-body row align-items-center">
       <div class="row align-items-center justify-content-center">
-        <div className="card mt-3 pt-3 w-auto">
+        <div className="card mt-5 pt-3 w-auto">
           <div className="poster-card" type="button" data-bs-toggle="modal" data-bs-target={`#exampleModal${props.cardnumber}`}>
             <img
               src={`https://image.tmdb.org/t/p/w500/${props.movie.poster_path}`}
@@ -29,7 +29,7 @@ export function MovieCard(props) {
               </div>
             </div>
           </div>
-          <div className="movie-name">Movie: {props.movie.title}</div>
+          <div className="movie-name">{props.movie.title}</div>
         </div>
       </div>
     </div>
