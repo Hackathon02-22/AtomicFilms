@@ -3,13 +3,28 @@
 * {
   font-family: 'Poppins', sans-serif;
 }
+
+html {
+  font-size: 16px;
+}
+
 .collapse:not(.show){
   display: block !important;
 }
 .navbar-nav .dropdown-menu{
   position: absolute !important;
 }
-.card-container{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(800px ,1fr));
+.card{
+ width: auto;
+ max-width: 20rem;
+ height: auto;
+ min-height: 20rem;
+ max-height: 35.625rem;
+
+}
+
+.score {
+  background-color: #ffd228;
+  width: auto;
+  height: auto;
 }

@@ -9,7 +9,7 @@ export function MovieList() {
     getAllMovies().then((resp) => setMovies(resp.results));
   }, []);
   return (
-    <div class="card-container">
+    <div class="d-flex flex-wrap justify-content-evenly p-4 gap-5">
       {movies.map((movie, index) => (
         <MovieCard movie={movie} key={index} cardnumber={index} />
       ))}
