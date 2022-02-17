@@ -3,3 +3,9 @@
 * {
   font-family: 'Poppins', sans-serif;
 }
+.collapse:not(.show){
+  display: block !important;
+}
+.navbar-nav .dropdown-menu{
+  position: absolute !important;
+}

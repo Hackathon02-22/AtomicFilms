@@ -12,7 +12,7 @@ const NavItems = () => {
             role="button"
             aria-expanded="false"
           >
-            Home
+            Menu
           </a>
           <ul class="dropdown-menu">
             <li>
