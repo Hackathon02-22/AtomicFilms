@@ -15,6 +15,7 @@ html {
   position: absolute !important;
 }
 .card-container{
+  padding-top: 6rem;
   background-image:linear-gradient(rgba(255, 255, 255, 0.623),rgba(255, 255, 255, 0.623)),url('https://previews.123rf.com/images/higyou/higyou0910/higyou091000104/5687055-seamless-vector-patr%C3%B3n-de-mosaico-la-textura-en-blanco-y-negro-de-cine.jpg');
 }
 
