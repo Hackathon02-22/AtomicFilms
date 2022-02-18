@@ -1,10 +1,10 @@
 import React from "react";
 import Navbar from "./Navbar";
 
-const Header = () => {
+const Header = ({ handleSearch, handlePage }) => {
   return (
-    <div className="mb-5">
-      <Navbar />
+    <div className="nav" style={{ marginBottom: "1rem" }}>
+      <Navbar handleSearch={handleSearch} handlePage={handlePage} />
     </div>
   );
 };
